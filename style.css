@@ -70,7 +70,9 @@ h1 {
 
 h2 {
   text-align: center;
-  margin: 100px, 0px;
+  margin: auto 0px;
+  width:800px;
+  font-size: 140%;
 }
 
 /* .canvas-container {
