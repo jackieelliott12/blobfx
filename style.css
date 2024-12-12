@@ -68,6 +68,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  text-align: center;
+  margin: 100px, 0px;
+}
+
 /* .canvas-container {
   position: relative;
   display: flex;

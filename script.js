@@ -14,7 +14,7 @@ let activeEffects = []; //array of effects that are active
 
 //blob positions
 let positions = [
-  { x: 50, y: 60 },   //synth
+  { x: 55, y: 55 },   //synth
   { x: 50, y: 450 },  //reverb
   { x: 120, y: 450 }, //delay
   { x: 190, y: 450 }, //chorus
@@ -155,10 +155,13 @@ function draw() {
     blob.position.y = constrain(blob.position.y, 20, height - 20);
   }
   
-   fill('white');
+  fill('white');
   stroke('black');
   textSize(20);
-   text('trash', 728, 28);
+  text('trash', 728, 28);
+  textSize(40);
+  text('<- fx', 690, 460);
+  text('<- sound', 110, 65);
 
   // Update effect parameters based on distance
   updateEffectParameters();
@@ -227,7 +230,7 @@ function draw() {
   //   melodyPlaying = false;
   // }
   
-    if ((synthBlob.pos.y > 60 && synthBlob.pos.x > 55) || synthBlob.pos.y > 60) {
+    if ((synthBlob.pos.y > 55 && synthBlob.pos.x > 50) || synthBlob.pos.y > 60) {
     if (!melodyPlaying) {
       startMusic();
       melodyPlaying = true;
