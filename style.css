@@ -73,3 +73,6 @@ input {
   transition: 500ms;
 }
 
+canvas {
+  display: block;
+}
