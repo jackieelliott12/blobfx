@@ -99,7 +99,7 @@ synth.connect(Tone.Destination);
 
 
 function setup() {
-  createCanvas(950, 600);
+  createCanvas(800, 600);
 
   //sprite for synth blob circle
   synthBlob = new Sprite();
@@ -139,7 +139,7 @@ function setup() {
   
   //reset button
   resetButton = createButton('Reset');
-  resetButton.position(527, 15); //near the trash can
+  resetButton.position(800, 15); //near the trash can
   resetButton.mousePressed(resetBlobs);
 
 }
