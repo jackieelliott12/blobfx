@@ -68,11 +68,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-      .canvas-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-      }
+/* .canvas-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+} */
 
 /* Button - Add it from the README instructions */
 button,
@@ -88,5 +88,8 @@ input {
 }
 
 canvas {
-  display: block;
+/*   display: block; */
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
