@@ -195,7 +195,7 @@ function draw() {
       if (
         activeBlob === blob &&
         synthBlob.colliding(blob) &&
-        synthBlob.pos.y > 100 &&
+        synthBlob.pos.y > 50 &&
         synthBlob.pos.y < 400
       ) {
         // Check if a joint already exists
@@ -214,7 +214,7 @@ function draw() {
   }
 
   // Start melody only if synthBlob is between the y range of 100 and 400
-  if (synthBlob.pos.y > 100 && synthBlob.pos.y < 400 && !melodyPlaying) {
+  if (synthBlob.pos.y > 70 && synthBlob.pos.y < 400 && !melodyPlaying) {
     startMusic();
     melodyPlaying = true;
   } else if ((synthBlob.pos.y <= 100 || synthBlob.pos.y >= 400) && melodyPlaying) {
