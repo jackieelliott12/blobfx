@@ -99,7 +99,7 @@ synth.connect(Tone.Destination);
 
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(800, 500);
 
   //sprite for synth blob circle
   synthBlob = new Sprite();
@@ -133,13 +133,13 @@ function setup() {
   trash = new Sprite();
   trash.width = 50;
   trash.height = 50;
-  trash.position = createVector(550, 65);
+  trash.position = createVector(750, 59);
   trash.collider = "static";
   trash.color = color(253, 114, 139); //watermelony pink
   
   //reset button
   resetButton = createButton('Reset');
-  resetButton.position(800, 15); //near the trash can
+  resetButton.position(800, 25); //near the trash can
   resetButton.mousePressed(resetBlobs);
 
 }
