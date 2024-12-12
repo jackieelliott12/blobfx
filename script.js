@@ -154,6 +154,11 @@ function draw() {
     blob.position.x = constrain(blob.position.x, 20, width - 20);
     blob.position.y = constrain(blob.position.y, 20, height - 20);
   }
+  
+   fill('white');
+  stroke('black');
+  textSize(20);
+   text('trash', 728, 28);
 
   // Update effect parameters based on distance
   updateEffectParameters();
@@ -214,10 +219,20 @@ function draw() {
   }
 
   // Start melody only if synthBlob is between the y range of 100 and 400
-  if (synthBlob.pos.y > 70 && synthBlob.pos.y < 400 && !melodyPlaying) {
-    startMusic();
-    melodyPlaying = true;
-  } else if ((synthBlob.pos.y <= 100 || synthBlob.pos.y >= 400) && melodyPlaying) {
+  // if (synthBlob.pos.y > 70 && synthBlob.pos.y < 400 && !melodyPlaying) {
+  //   startMusic();
+  //   melodyPlaying = true;
+  // } else if ((synthBlob.pos.y <= 100 || synthBlob.pos.y >= 400) && melodyPlaying) {
+  //   stopMusic();
+  //   melodyPlaying = false;
+  // }
+  
+    if ((synthBlob.pos.y > 60 && synthBlob.pos.x > 55) || synthBlob.pos.y > 60) {
+    if (!melodyPlaying) {
+      startMusic();
+      melodyPlaying = true;
+    }
+  } else if (melodyPlaying) {
     stopMusic();
     melodyPlaying = false;
   }
