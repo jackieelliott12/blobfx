@@ -99,7 +99,7 @@ synth.connect(Tone.Destination);
 
 
 function setup() {
-  createCanvas(600, 500);
+  createCanvas(950, 600);
 
   //sprite for synth blob circle
   synthBlob = new Sprite();
