@@ -1,3 +1,8 @@
+/* Below is some base css taken from uploading to glitch 
+- decided to save some instead of deleting all of it */
+
+
+/* Start of glitch css below */
 /******************************************************************************
 START Glitch hello-app default styles
 
@@ -53,6 +58,7 @@ to this section's matching END comment to see page-specific styles.
 END Glitch hello-app default styles
 ******************************************************************************/
 
+
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
@@ -75,12 +81,7 @@ h2 {
   font-size: 140%;
 }
 
-/* .canvas-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-} */
-
+/* this taken from glitch - issue with button moving around even though it is attached to the p5 sketch */
 /* Button - Add it from the README instructions */
 button,
 input {
@@ -94,8 +95,8 @@ input {
   transition: 500ms;
 }
 
+/* p5 */
 canvas {
-/*   display: block; */
   position: relative;
   display: flex;
   justify-content: center;

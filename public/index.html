@@ -3,26 +3,22 @@
   <head>
     
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
     
     <title>BlobFX</title>
-
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
     <h1>blobFX</h1>
     <h2>
       Drag the sound blob to hear a melody. Drag the fx blobs to the sound blob to add sound effects. Move a blob to the trash to remove and reset it.
     </h2>
-    
-    <p>
+  </head>
+
+  <body>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.35/Tone.js"></script>
     <script src="https://p5play.org/v3/planck.min.js"></script>
     <script src="https://p5play.org/v3/p5play.js"></script>
-      </p>
+    <script src="sketch.js"></script>
   </body>
 </html>
